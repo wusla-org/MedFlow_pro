@@ -28,12 +28,12 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   ];
 
   const commands = [
-    { id: "cmd-ingest", name: "Bulk Ingest 100 Patient Records", desc: "Simulates intake extraction pipeline", action: () => triggerBulkUpload() },
+    { id: "cmd-ingest", name: "Import 100 Patient Records", desc: "Runs automated intake processing", action: () => triggerBulkUpload() },
     { id: "cmd-crm", name: "Navigate to Patient Directory", desc: "View timelines and WhatsApp logs", action: () => router.push("/dashboard/candidates") },
-    { id: "cmd-employer", name: "Navigate to Clinical Portal", desc: "Coordinate Emaar & Riyadh client feedback", action: () => router.push("/dashboard/employer-portal") },
+    { id: "cmd-employer", name: "Navigate to Clinical Portal", desc: "View insurance claims and approvals", action: () => router.push("/dashboard/employer-portal") },
     { id: "cmd-scheduler", name: "Navigate to Treatment Scheduler", desc: "View room booking grids", action: () => router.push("/dashboard/scheduler") },
-    { id: "cmd-mobile", name: "Navigate to Specialist App Preview", desc: "Simulated iPhone agenda & notes", action: () => router.push("/dashboard/mobile-app") },
-    { id: "cmd-reset", name: "Reset Clinic Database", desc: "Wipes database logs and resets state", action: () => resetMockData() }
+    { id: "cmd-mobile", name: "Navigate to Specialist App Preview", desc: "Mobile agenda and clinical notes", action: () => router.push("/dashboard/mobile-app") },
+    { id: "cmd-reset", name: "Reset Demo Data", desc: "Clears demo data and resets to defaults", action: () => resetMockData() }
   ];
 
   const filteredCommands = commands.filter(c => 
@@ -64,7 +64,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     if (pathname === "/dashboard/candidates") return "Patient Intake Directory";
     if (pathname === "/dashboard/employer-portal") return "Insurance Gateway";
     if (pathname === "/dashboard/scheduler") return "Treatment Scheduler";
-    if (pathname === "/dashboard/mobile-app") return "Specialist Companion App";
+    if (pathname === "/dashboard/mobile-app") return "Specialist Mobile App";
     if (pathname === "/dashboard/analytics") return "Clinical Reports";
     return "MedFlow Dashboard";
   };
@@ -174,14 +174,14 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
             <div className="flex gap-4">
               <span className="text-black font-bold border-b-2 border-[#006a61] pb-0.5 text-xs">Dubai</span>
-              <span className="text-[#45464d] hover:text-[#006a61] transition-colors cursor-pointer text-xs" onClick={() => alert("Switched to Riyadh clinic node")}>Riyadh</span>
+              <span className="text-[#45464d] hover:text-[#006a61] transition-colors cursor-pointer text-xs" onClick={() => alert("Switched to Riyadh clinic branch")}>Riyadh</span>
             </div>
           </div>
 
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2 bg-[#86f2e4]/20 px-3 py-1.5 rounded-full border border-[#006a61]/15 ai-pulse">
               <span className="material-symbols-outlined text-[#b45309] text-[16px] animate-spin">auto_awesome</span>
-              <span className="text-[10px] font-bold text-[#b45309]">AI Autopilot: Active</span>
+              <span className="text-[10px] font-bold text-[#b45309]">AI System: Active</span>
             </div>
 
             <div className="flex items-center gap-4 text-[#45464d]">
@@ -195,8 +195,8 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                 {showNotifications && (
                   <div className="absolute top-full right-0 mt-2 w-80 rounded-xl bg-white border border-[#c6c6cd]/30 shadow-2xl z-50 p-2 overflow-hidden">
                     <div className="p-3 border-b border-[#c6c6cd]/20 flex items-center justify-between">
-                      <span className="text-xs font-bold text-black font-sans">Pipeline Streams</span>
-                      <span className="text-[9px] px-1.5 py-0.5 rounded bg-[#86f2e4]/30 text-[#006f66] font-bold">Autopilot</span>
+                      <span className="text-xs font-bold text-black font-sans">Activity Feed</span>
+                      <span className="text-[9px] px-1.5 py-0.5 rounded bg-[#86f2e4]/30 text-[#006f66] font-bold">AI Active</span>
                     </div>
                     <div className="max-h-72 overflow-y-auto divide-y divide-[#c6c6cd]/10">
                       {activityLogs.slice().reverse().slice(0, 4).map((log) => (
@@ -249,7 +249,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
             <div className="flex items-center gap-2 text-[#006a61] pb-2.5 border-b border-[#c6c6cd]/25 mb-3.5 text-xs font-bold uppercase tracking-wider">
               <Command className="h-4.5 w-4.5 animate-pulse" />
-              <span>MedFlow Command Operations</span>
+              <span>MedFlow Quick Actions</span>
             </div>
 
             <div className="flex items-center gap-3 px-3.5 py-2.5 rounded-xl bg-[#f2f4f6] border border-[#c6c6cd]/30">
@@ -257,7 +257,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
               <input 
                 autoFocus
                 type="text" 
-                placeholder="Type command action..."
+                placeholder="Search actions..."
                 value={commandSearch}
                 onChange={(e) => setCommandSearch(e.target.value)}
                 className="bg-transparent border-none text-xs text-black placeholder-slate-400 outline-none w-full font-sans focus:ring-0"

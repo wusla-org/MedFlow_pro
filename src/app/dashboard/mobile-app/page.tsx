@@ -45,7 +45,7 @@ export default function MobileAppPreview() {
           </div>
 
           <div className="glass-card rounded-2xl p-5 bg-white border border-[#c6c6cd]/30 space-y-3 shadow-sm">
-            <h3 className="text-xs font-bold uppercase tracking-wider text-[#45464d]">Features to test inside simulator</h3>
+            <h3 className="text-xs font-bold uppercase tracking-wider text-[#45464d]">Features available on mobile</h3>
             <ul className="text-xs text-[#45464d] space-y-2.5">
               <li className="flex items-center gap-2"><Check className="h-4 w-4 text-[#006a61]" /> Verify upcoming treatments in the **Agenda** tab.</li>
               <li className="flex items-center gap-2"><Check className="h-4 w-4 text-[#006a61]" /> Search patient diagnoses under the **Lookup** directory.</li>

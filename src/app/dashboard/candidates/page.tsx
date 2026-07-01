@@ -275,7 +275,7 @@ export default function PatientDirectory() {
 
               <div className="flex items-center gap-3">
                 <span className="text-[9px] uppercase font-bold tracking-wider px-2.5 py-1 rounded bg-[#f2f4f6] border border-[#c6c6cd]/40 text-[#006a61] font-mono">
-                  Match: {activeCandidate.score}%
+                  Confidence: {activeCandidate.score}%
                 </span>
                 <select
                   value={activeCandidate.status}
@@ -311,7 +311,7 @@ export default function PatientDirectory() {
               </div>
 
               <div className="p-4 rounded-xl bg-white border border-[#c6c6cd]/30 space-y-1">
-                <span className="text-[9px] text-[#45464d] uppercase tracking-wider block font-bold">Contact Specs</span>
+                <span className="text-[9px] text-[#45464d] uppercase tracking-wider block font-bold">Contact Details</span>
                 <p className="text-[10px] text-black mt-1 truncate">{activeCandidate.phone}</p>
                 <p className="text-[10px] text-[#45464d] truncate">{activeCandidate.email}</p>
               </div>
@@ -324,7 +324,7 @@ export default function PatientDirectory() {
                     <Mic className="h-4 w-4 text-[#cf6721]" />
                     AI Medical Scribe Console
                   </h4>
-                  <span className="text-[9px] text-[#45464d] font-mono">NLP Audio</span>
+                  <span className="text-[9px] text-[#45464d] font-mono">Voice AI</span>
                 </div>
 
                 <div className="space-y-4">
@@ -343,7 +343,7 @@ export default function PatientDirectory() {
 
                   {dictatedText && (
                     <div className="p-3 bg-[#f2f4f6] rounded-xl border border-[#c6c6cd]/30 font-mono text-[10px] text-black max-h-[80px] overflow-y-auto">
-                      <span className="text-[#cf6721] font-bold block mb-1">Dictating Feed:</span>
+                      <span className="text-[#cf6721] font-bold block mb-1">Dictation Log:</span>
                       {dictatedText}
                     </div>
                   )}

@@ -31,7 +31,7 @@ export default function PatientIntakeDashboard() {
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-4">
         <div>
           <h2 className="text-xl sm:text-2xl font-black text-black tracking-tight">Patient Intake</h2>
-          <p className="text-xs text-[#45464d] mt-0.5">Verify incoming clinical data and automated extractions.</p>
+          <p className="text-xs text-[#45464d] mt-0.5">Verify incoming clinical data and AI-processed records.</p>
         </div>
 
         <div className="flex gap-4">
@@ -85,7 +85,7 @@ export default function PatientIntakeDashboard() {
                 onClick={(e) => { e.stopPropagation(); resetMockData(); }}
                 className="px-5 py-2 border border-[#c6c6cd] text-[#191c1e] font-bold text-[11px] rounded-full hover:bg-[#eceef0] transition-colors"
               >
-                Reset Database
+                Reset Demo Data
               </button>
             </div>
 

@@ -56,11 +56,11 @@ export default function MarketingLandingPage() {
             <div className="space-y-6 text-left">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#86f2e4]/20 text-[#006a61] rounded-full border border-[#006a61]/15">
                 <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>auto_awesome</span>
-                <span className="text-[10px] font-bold uppercase tracking-widest">The Autopilot for GCC Healthcare</span>
+                <span className="text-[10px] font-bold uppercase tracking-widest">The Operating System for GCC Healthcare</span>
               </div>
               
               <h1 className="text-4xl lg:text-5xl lg:leading-[58px] font-black text-black tracking-tight">
-                Clinic Autopilot: <br/>
+                Clinic Intelligence: <br/>
                 <span className="text-[#006a61]">Healing</span> Over Administration.
               </h1>
               
@@ -73,14 +73,14 @@ export default function MarketingLandingPage() {
                   href="/dashboard" 
                   className="px-6 py-3.5 bg-black text-white rounded-xl text-xs font-bold shadow-lg hover:translate-y-[-2px] transition-all flex items-center justify-center gap-2"
                 >
-                  Enter Portal Command Center
+                  Enter Clinic Command Center
                   <span className="material-symbols-outlined text-sm">arrow_forward</span>
                 </Link>
                 <a 
                   href="#roi" 
                   className="px-6 py-3.5 bg-white border border-[#c6c6cd] text-black rounded-xl text-xs font-bold hover:bg-[#eceef0]/30 transition-all flex items-center justify-center gap-2"
                 >
-                  Explore ROI Metrics
+                  See Revenue Impact
                 </a>
               </div>
             </div>
@@ -126,11 +126,11 @@ export default function MarketingLandingPage() {
               <div className="lg:col-span-5 text-left space-y-4">
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#cf6721]/10 text-[#cf6721] border border-[#cf6721]/20 font-bold text-[9px] uppercase tracking-wider">
                   <span className="material-symbols-outlined text-xs">auto_awesome</span>
-                  Active Ingestion Sandbox
+                  Live Import Preview
                 </div>
-                <h2 className="text-3xl font-black text-black tracking-tight">Ingest 100 Patient Records</h2>
+                <h2 className="text-3xl font-black text-black tracking-tight">Import 100 Patient Records</h2>
                 <p className="text-xs text-[#45464d] leading-relaxed">
-                  Trigger MedFlow's clinical extraction engine. Uploading parses symptoms, checks insurance approvals against Dubai/Riyadh carrier rules, and sorts active cases.
+                  Run MedFlow's clinical processing system. Uploading parses symptoms, checks insurance approvals against Dubai/Riyadh carrier rules, and sorts active cases.
                 </p>
 
                 <div className="pt-2">
@@ -141,11 +141,11 @@ export default function MarketingLandingPage() {
                   >
                     {isUploading ? (
                       <>
-                        <RefreshCw className="h-4 w-4 animate-spin" /> Ingesting & Scanning...
+                        <RefreshCw className="h-4 w-4 animate-spin" /> Importing & Scanning...
                       </>
                     ) : (
                       <>
-                        <Play className="h-4 w-4" /> Trigger 100 Intake Scans
+                        <Play className="h-4 w-4" /> Run 100 Intake Scans
                       </>
                     )}
                   </button>
@@ -161,9 +161,9 @@ export default function MarketingLandingPage() {
                   )}
 
                   <div className="flex justify-between items-center pb-3 border-b border-[#c6c6cd]/20">
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#45464d]">Extraction Feed</span>
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#45464d]">Processing Log</span>
                     <span className="text-[9px] px-2 py-0.5 rounded bg-[#f2f4f6] text-[#006a61] font-bold font-mono">
-                      {isUploading ? "SCANNING PIPELINE..." : uploadedCount > 0 ? "100 RECORDS INGESTED" : "SANDBOX READY"}
+                      {isUploading ? "SCANNING RECORDS..." : uploadedCount > 0 ? "100 RECORDS IMPORTED" : "READY"}
                     </span>
                   </div>
 
@@ -193,7 +193,7 @@ export default function MarketingLandingPage() {
                       </div>
                     ) : (
                       <p className="text-xs text-[#45464d] italic text-center py-6">
-                        Click the trigger button to upload a simulated batch of patient intake PDFs.
+                        Click the button above to upload a simulated batch of patient intake PDFs.
                       </p>
                     )}
                   </div>
@@ -214,7 +214,7 @@ export default function MarketingLandingPage() {
         <section className="py-20" id="platform">
           <div className="max-w-7xl mx-auto px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-black text-black tracking-tight mb-3">The Autopilot Suite</h2>
+              <h2 className="text-3xl font-black text-black tracking-tight mb-3">The MedFlow Platform</h2>
               <p className="text-xs text-[#45464d] max-w-md mx-auto">One unified clinical operating system to handle everything but the care.</p>
             </div>
 
@@ -267,7 +267,7 @@ export default function MarketingLandingPage() {
                 </div>
                 <h3 className="text-sm font-bold text-black">Intelligent Intake</h3>
                 <p className="text-xs text-[#45464d] mt-1.5">
-                  10x faster patient onboarding velocity with automated history parsing and biometric clinical verification.
+                  10x faster patient onboarding speed with automated history parsing and biometric clinical verification.
                 </p>
               </div>
 
@@ -297,7 +297,7 @@ export default function MarketingLandingPage() {
           <div className="max-w-7xl mx-auto px-8 relative z-10">
             
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-black text-white tracking-tight">Clinic Capacity Lift</h2>
+              <h2 className="text-3xl font-black text-white tracking-tight">Revenue & Efficiency Impact</h2>
               <p className="text-xs text-slate-400 mt-1">Real-world impact across GCC's leading clinical networks.</p>
             </div>
 
@@ -308,11 +308,11 @@ export default function MarketingLandingPage() {
               </div>
               <div className="text-center space-y-1">
                 <p className="text-5xl font-black text-[#89f5e7] font-mono">10x</p>
-                <p className="text-xs font-bold text-slate-350">Onboarding Velocity</p>
+                <p className="text-xs font-bold text-slate-350">Onboarding Speed</p>
               </div>
               <div className="text-center space-y-1">
                 <p className="text-5xl font-black text-[#89f5e7] font-mono">4.2x</p>
-                <p className="text-xs font-bold text-slate-350">Clinic Patient Capacity Lift</p>
+                <p className="text-xs font-bold text-slate-350">Patient Capacity Increase</p>
               </div>
             </div>
 
@@ -366,9 +366,9 @@ export default function MarketingLandingPage() {
           <div className="bg-[#131b2e] text-white rounded-[40px] p-12 text-center relative overflow-hidden shadow-2xl">
             <div className="absolute -top-24 -right-24 w-64 h-64 bg-[#006a61]/20 rounded-full blur-3xl"></div>
             <div className="relative z-10 space-y-6">
-              <h2 className="text-3xl font-black text-white leading-tight">Join the Future of <br/>GCC Healthcare</h2>
+              <h2 className="text-3xl font-black text-white leading-tight">Stop Losing Revenue to <br/>Operational Chaos</h2>
               <p className="text-xs text-slate-400 max-w-md mx-auto leading-relaxed">
-                The era of manual clinical administration is over. Step into the elite circle of automated medical excellence.
+                Missed appointments, reception overload, and scattered patient data cost your clinic thousands every month. MedFlow Pro eliminates all of it.
               </p>
               <div className="pt-4">
                 <Link 
@@ -401,7 +401,7 @@ export default function MarketingLandingPage() {
           </div>
 
           <p className="text-[10px] text-slate-500 text-center">
-            © 2026 MedFlow Pro. Clinical Excellence for GCC Healthcare Providers. Dubai, Riyadh, Doha.
+            © 2026 MedFlow Pro. AI-Powered Clinic Operating System. Dubai · Riyadh · Doha
           </p>
         </div>
       </footer>

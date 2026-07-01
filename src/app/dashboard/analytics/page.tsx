@@ -84,7 +84,7 @@ export default function AnalyticsDashboard() {
         </div>
 
         <div className="p-5 rounded-2xl glass-card text-xs space-y-2">
-          <span className="text-slate-500 uppercase tracking-wider block font-bold">AI Autopilot Intakes</span>
+          <span className="text-slate-500 uppercase tracking-wider block font-bold">AI-Processed Intakes</span>
           <div className="text-2xl font-extrabold text-white font-mono flex items-baseline gap-1.5 pt-1">
             98.4% <span className="text-xs text-slate-500 font-sans">Accuracy</span>
           </div>
@@ -132,7 +132,7 @@ export default function AnalyticsDashboard() {
         <div className="lg:col-span-5 glass-card rounded-2xl p-5 space-y-4">
           <div>
             <h3 className="text-xs font-bold uppercase tracking-wider text-slate-300">Patient Wait Time (Minutes)</h3>
-            <p className="text-[10px] text-slate-500 mt-0.5">Comparing manual front-desk queue delays against MedFlow Pro autopilot</p>
+            <p className="text-[10px] text-slate-500 mt-0.5">Comparing manual front-desk queue delays against MedFlow Pro AI</p>
           </div>
 
           <div className="h-64 w-full">

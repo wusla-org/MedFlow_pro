@@ -142,7 +142,7 @@ export default function TreatmentScheduler() {
         <div className="glass-card p-4 bg-white border border-[#006a61]/30 rounded-2xl space-y-4 shadow-sm ai-glow">
           <div className="flex items-center gap-2 text-[#b45309]">
             <Sparkles className="h-4.5 w-4.5 animate-pulse" />
-            <h3 className="text-xs font-bold uppercase tracking-wider">AI Scheduling Autopilot</h3>
+            <h3 className="text-xs font-bold uppercase tracking-wider">AI Smart Scheduler</h3>
           </div>
 
           <p className="text-[11px] text-[#45464d] leading-relaxed">
@@ -164,7 +164,7 @@ export default function TreatmentScheduler() {
               onClick={() => setSchedulerApplied(true)}
               className="w-full py-2.5 rounded-xl bg-black text-white text-[10px] font-bold transition-all text-center"
             >
-              Configure Allocation Thresholds
+              Configure Room Settings
             </button>
           )}
         </div>

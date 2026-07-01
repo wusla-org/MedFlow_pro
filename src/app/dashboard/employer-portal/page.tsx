@@ -141,7 +141,7 @@ export default function InsuranceGateway() {
                       <CheckCircle className="h-3 w-3" /> AI Pre-Auth Approved
                     </span>
                   ) : (
-                    <span className="text-[#45464d] italic">Claim Overriden</span>
+                    <span className="text-[#45464d] italic">Claim Overridden</span>
                   )}
                 </td>
                 <td className="px-6 py-4 text-right">
@@ -283,7 +283,7 @@ export default function InsuranceGateway() {
           <div className="relative z-10 space-y-4">
             <div className="flex items-center gap-2 text-[#cf6721]">
               <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>auto_awesome</span>
-              <h4 className="text-sm font-bold uppercase tracking-wider">AI Automation Engine</h4>
+              <h4 className="text-sm font-bold uppercase tracking-wider">AI Billing Intelligence</h4>
             </div>
             <p className="text-xs text-black leading-relaxed">
               MedFlow AI has identified a 15% increase in "Billing Mismatch" rejections for Thiqa plans this week. We recommend updating the ICD-10 mapping for radiology codes to prevent future delays.
